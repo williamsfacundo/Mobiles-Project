@@ -13,7 +13,7 @@ public class Vereda : MonoBehaviour
 	{
 		if(other.tag == PlayerTag)
 		{
-			other.SendMessage("SumaGiro", GiroPorSeg * T.GetDT());
+			other.SendMessage("SumaGiro", GiroPorSeg * Time.deltaTime);
 		}	
 	}
 	

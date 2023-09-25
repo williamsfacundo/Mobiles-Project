@@ -36,7 +36,7 @@ public class BolsaAnim : MonoBehaviour
 			if(Giro)
 			{
 				vAuxGir = Vector3.zero;
-				vAuxGir.y = T.GetDT() * GiroVel;
+				vAuxGir.y = Time.deltaTime * GiroVel;
 				transform.localEulerAngles += vAuxGir;
 			}
 			

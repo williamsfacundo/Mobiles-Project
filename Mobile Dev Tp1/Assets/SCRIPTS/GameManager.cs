@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour {
     void Update() {
         //REINICIAR
         if (Input.GetKey(KeyCode.Alpha0)) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
         }
 
         //CIERRA LA APLICACION
@@ -116,7 +116,7 @@ public class GameManager : MonoBehaviour {
 
                 TiempEspMuestraPts -= Time.deltaTime;
                 if (TiempEspMuestraPts <= 0)
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
 
                 break;
         }

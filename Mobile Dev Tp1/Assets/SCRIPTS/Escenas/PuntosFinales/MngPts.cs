@@ -47,7 +47,7 @@ public class MngPts : MonoBehaviour
 		   Input.GetKeyDown(KeyCode.Return) ||
 		   Input.GetKeyDown(KeyCode.Alpha0))
 		{
-			SceneManager.LoadScene(0);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
 		}
 		
 		//CIERRA LA APLICACION
@@ -60,7 +60,7 @@ public class MngPts : MonoBehaviour
 		TiempEspReiniciar -= Time.deltaTime;
 		if(TiempEspReiniciar <= 0 )
 		{
-			SceneManager.LoadScene(0);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
 		}
 		
 		

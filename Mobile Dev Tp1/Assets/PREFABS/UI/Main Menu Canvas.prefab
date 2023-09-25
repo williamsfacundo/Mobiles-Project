@@ -404,7 +404,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'single player
+  m_text: 'singleplayer
 
 '
   m_isRightToLeft: 0
@@ -1403,6 +1403,7 @@ GameObject:
   - component: {fileID: 8479578264073596603}
   - component: {fileID: 1127771554194580866}
   - component: {fileID: 4802742629418513696}
+  - component: {fileID: 6047528738103813059}
   m_Layer: 5
   m_Name: Normal Button
   m_TagString: Untagged
@@ -1512,7 +1513,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1127771554194580866}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: LevelDifficulty, Assembly-CSharp
+        m_MethodName: SetDifficultyNormal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6047528738103813059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4828048966401972925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2cd512ea4dd0024eaae33382a17f30f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonDifficulty: 1
 --- !u!1 &5538537090004779508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,6 +1685,7 @@ GameObject:
   - component: {fileID: 7460143284081764945}
   - component: {fileID: 1233891930828116314}
   - component: {fileID: 3306502524768112200}
+  - component: {fileID: 6210106621435670426}
   m_Layer: 5
   m_Name: Hard Button
   m_TagString: Untagged
@@ -1768,7 +1795,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1233891930828116314}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: LevelDifficulty, Assembly-CSharp
+        m_MethodName: SetDifficultyHard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6210106621435670426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6273001231517634125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2cd512ea4dd0024eaae33382a17f30f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonDifficulty: 2
 --- !u!1 &8639328860864864008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1781,6 +1833,7 @@ GameObject:
   - component: {fileID: 1103500348542823493}
   - component: {fileID: 385231488667380647}
   - component: {fileID: 8850069692046692453}
+  - component: {fileID: 8874022190902709330}
   m_Layer: 5
   m_Name: Easy Button
   m_TagString: Untagged
@@ -1890,7 +1943,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 385231488667380647}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: LevelDifficulty, Assembly-CSharp
+        m_MethodName: SetDifficultyEasy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8874022190902709330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8639328860864864008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2cd512ea4dd0024eaae33382a17f30f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonDifficulty: 0
 --- !u!1 &8727633139016640417
 GameObject:
   m_ObjectHideFlags: 0

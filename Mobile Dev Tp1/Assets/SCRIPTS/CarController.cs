@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class CarController : MonoBehaviour {
@@ -15,7 +14,7 @@ public class CarController : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         foreach (var wheel in throttleWheels) {
-            wheel.motorTorque = throttleCoefficient * T.GetFDT() * acel;
+            wheel.motorTorque = throttleCoefficient * Time.deltaTime * acel;
         }
         foreach (var wheel in steeringWheels) {
             wheel.steerAngle = maxTurn * giro;

@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour {
                 }
 
                 if (ConteoRedresivo) {
-                    ConteoParaInicion -= T.GetDT();
+                    ConteoParaInicion -= Time.deltaTime;
                     if (ConteoParaInicion < 0) {
                         EmpezarCarrera();
                         ConteoRedresivo = false;
@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour {
                 }
                 else {
                     //baja el tiempo del juego
-                    TiempoDeJuego -= T.GetDT();
+                    TiempoDeJuego -= Time.deltaTime;
                 }
                 if (ConteoRedresivo) {
                     if (ConteoParaInicion > 1) {

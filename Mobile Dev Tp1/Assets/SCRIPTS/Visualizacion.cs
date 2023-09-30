@@ -213,7 +213,7 @@ public class Visualizacion : MonoBehaviour
 		}
 
         if(contador >= 3) {
-			TempParp += T.GetDT();
+			TempParp += Time.deltaTime;
 
 			if(TempParp >= Parpadeo) {
 				TempParp = 0;

@@ -17204,7 +17204,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6246}
   - component: {fileID: 13082}
-  - component: {fileID: 12392}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -74895,14 +74894,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6171545, y: 4.803228, z: 0.9808152}
   m_Center: {x: 0.19142276, y: 3.0148237, z: 0.009236515}
---- !u!81 &12392
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3099}
-  m_Enabled: 1
 --- !u!108 &12399
 Light:
   m_ObjectHideFlags: 0
@@ -85388,7 +85379,7 @@ PrefabInstance:
     - target: {fileID: 5347541340114307321, guid: db6086bb6cb40af44868891788f049a9,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 255
+      value: 230
       objectReference: {fileID: 0}
     - target: {fileID: 5347541340114307321, guid: db6086bb6cb40af44868891788f049a9,
         type: 3}
@@ -85398,7 +85389,7 @@ PrefabInstance:
     - target: {fileID: 5347541340114307321, guid: db6086bb6cb40af44868891788f049a9,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -220
+      value: -190
       objectReference: {fileID: 0}
     - target: {fileID: 5347541340114307321, guid: db6086bb6cb40af44868891788f049a9,
         type: 3}
@@ -85408,7 +85399,7 @@ PrefabInstance:
     - target: {fileID: 5347541340114307322, guid: db6086bb6cb40af44868891788f049a9,
         type: 3}
       propertyPath: m_FontData.m_Alignment
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5347541340171372817, guid: db6086bb6cb40af44868891788f049a9,
         type: 3}
@@ -85847,7 +85838,7 @@ GameObject:
   - component: {fileID: 444645408}
   - component: {fileID: 444645409}
   m_Layer: 5
-  m_Name: Screen Layout
+  m_Name: Screens
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85916,7 +85907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &611983552
 RectTransform:
   m_ObjectHideFlags: 0
@@ -87120,7 +87111,7 @@ PrefabInstance:
     - target: {fileID: 5347541340114307321, guid: db6086bb6cb40af44868891788f049a9,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 255
+      value: 230
       objectReference: {fileID: 0}
     - target: {fileID: 5347541340114307321, guid: db6086bb6cb40af44868891788f049a9,
         type: 3}
@@ -87130,12 +87121,17 @@ PrefabInstance:
     - target: {fileID: 5347541340114307321, guid: db6086bb6cb40af44868891788f049a9,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 240
+      value: 205
       objectReference: {fileID: 0}
     - target: {fileID: 5347541340114307321, guid: db6086bb6cb40af44868891788f049a9,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347541340114307322, guid: db6086bb6cb40af44868891788f049a9,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5347541340171372817, guid: db6086bb6cb40af44868891788f049a9,
         type: 3}

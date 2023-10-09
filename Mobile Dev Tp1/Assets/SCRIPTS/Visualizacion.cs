@@ -117,35 +117,7 @@ public class Visualizacion : MonoBehaviour
 		CamDescarga.enabled = true;
 
         Array.ForEach(enableInPlayerStates, e => e.SetPlayerState(Pj.EstAct));
-    }
-	
-	//---------//
-	
-	public void SetLado(Lado lado)
-	{
-		LadoAct = lado;
-		
-		Rect r = new Rect();
-		r.width = CamConduccion.rect.width;
-		r.height = CamConduccion.rect.height;
-		r.y = CamConduccion.rect.y;
-		
-		switch (lado)
-		{
-		case Lado.Der:
-			r.x = 0.5f;
-			break;
-			
-			
-		case Lado.Izq:
-			r.x = 0;
-			break;
-		}
-		
-		CamCalibracion.rect = r;
-		CamConduccion.rect = r;
-		CamDescarga.rect = r;
-	}
+    }	
 	
 	void SetBonus()
 	{
@@ -243,7 +215,7 @@ public class Visualizacion : MonoBehaviour
 		
 		if(dinero < 1)//sin ditero
 		{
-			res = "";
+			res = "000000";
 		}else if(strDinero.Length == 6)//cientos de miles
 		{
 			for(int i = 0; i < strDinero.Length; i++)

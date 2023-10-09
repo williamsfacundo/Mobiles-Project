@@ -125,8 +125,4 @@ public class Respawn : MonoBehaviour
 		IgnorandoColision = b;	
 		Tempo = 0;
 	}
-	
-	
-	
-	
 }
